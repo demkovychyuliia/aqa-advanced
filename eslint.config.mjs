@@ -40,4 +40,13 @@ export default defineConfig([
   },
 
   eslintConfigPrettier,
+
+  {
+    files: ['**/*.test.{js,mjs,cjs}'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+  },
 ]);
